@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: linear-gradient(243.87deg, rgba(81, 48, 175, 0.8) 2.83%, rgba(175, 48, 48, 0.8) 99.47%), #FFFFFF;
+  background-blend-mode: darken, normal;
 }
 
 a {

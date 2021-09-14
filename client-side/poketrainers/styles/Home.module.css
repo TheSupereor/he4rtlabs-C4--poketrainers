@@ -1,3 +1,16 @@
+.ou{
+  display: flex;
+  font-size: 16px;
+  color: grey;
+  font-weight: bold;
+}
+
+.ou hr{
+  width: 30%;
+  height: 1px;
+  margin: auto;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -6,6 +19,96 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.topDetail{
+  position: relative;
+  top: 20px;
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 0 0 6px #171717;
+  z-index: 0;
+}
+
+.defaultBg{
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 0 6px #171717;
+  z-index: 1;
+}
+
+.login{
+  width: 55vw;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 0px 8px #448EA8;
+}
+
+.login h2{
+  margin-top: 0px;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 30px 40px;
+}
+
+.formLogin{
+  display: flex;
+}
+
+.inputText{
+  height: 55px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  margin: 0 20px 0 40px;
+  padding: 0 20px;
+
+  font-size: 28px;
+}
+
+.inputText:focus{
+  outline: none;
+}
+
+.buttonDefault{
+  padding: 12px 40px;
+  font-size: 28px;
+  border-radius: 10px;
+  background-color: #29516E;
+  color: #F2F2F2;
+  border: none;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.buttonDefault:hover{
+  background-color: #448EA8;
+}
+
+.formLogin .buttonDefault{
+  margin-right: 25px;
+}
+
+.newTrainerButton{
+  margin: 0 40px 40px;
+  padding: 12px 40px;
+  width: calc(100% - 65px);
+  font-size: 28px;
+  border-radius: 10px;
+  background-color: #29516E;
+  color: #F2F2F2;
+  border: none;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.newTrainerButton:hover{
+  background-color: #448EA8;
 }
 
 .main {
