@@ -1,0 +1,141 @@
+.changeThemeButton{
+    position: fixed;
+    bottom: 5%;
+    left: 95%;
+
+    background: url('../public/Pokéball_1_.svg');
+    background-color: none;
+    background-size: contain;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    
+    transition: 0.45s;
+    cursor: pointer;
+}
+
+.changeThemeButton:focus{
+    transform: rotate(-180deg);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.4s;
+}
+
+.modalHeader h3{
+    margin: 0;
+}
+
+.modalContent{
+    background-color: white;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+
+    right: calc(-50% + 250px);
+
+    transition: all 0.45s ease-in-out;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+}
+
+.inactive{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modalContent.active{
+    top: 30%;
+}
+
+.modalContent.inactive{
+    top: 40%;
+}
+
+.modalTitle{
+    margin: 0;
+}
+
+.modalBody{
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 20px;
+
+    gap:20px
+}
+
+.modalFooter button{
+    margin: 0 20px;
+}
+
+.buttonThemePreview{
+    background: none;
+    border-radius: 20px;
+    border: none;
+    padding: 20px 0;
+
+    cursor: pointer
+}
+
+.buttonThemePreview:hover{
+    background: rgba(180, 180, 180, 0.3);
+}
+
+.ThemePreview{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px auto 0;
+
+}
+
+.ThemePreviewText{
+    margin: 10px 10px;
+    width: 80px;
+    height: 30px;
+}
+
+/* Auxiliares */
+
+.AtivarDisplay{
+    display: flex;
+}
+  
+.DesativarDisplay{
+    display: none;
+}
+
+.GhostFire{
+    background: var(--gradiente-roxo-vermelho);
+}
+
+.WaterGreen{
+    background: var(--gradiente-azul-verde)
+}
+
+.GreenEarth{
+    background: var(--gradiente-musgo-amarelo-adrian);
+}

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(243.87deg, rgba(81, 48, 175, 0.8) 2.83%, rgba(175, 48, 48, 0.8) 99.47%), #FFFFFF;
-  background-blend-mode: darken, normal;
 }
 
 a {
@@ -15,4 +15,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+
+:root{
+  --pokemon-color-1: #499222;
+  --pokemon-color-2: #45712F;
+  --backpack-color-1: #EBA325;
+  --backpack-color-2: #DE6017;
+  --trainer-color-1: #448EA8;
+  --trainer-color-2: #29516E;
+  --cinza-claro-whiteTheme: #F6F8FA;
+  --cinza-escuro-darkTheme: #66656E;
+  --letras-escuras: #060904;
+
+  --gradiente-roxo-vermelho: linear-gradient(243.87deg, rgba(81, 48, 175, 0.8) 2.83%, rgba(175, 48, 48, 0.8) 99.47%), #FFFFFF;
+  --gradiente-azul-verde: linear-gradient(243.87deg, rgba(9, 126, 56, 0.8) 2.83%, rgba(11, 100, 129, 0.8) 99.47%), #FFFFFF;
+  --gradiente-musgo-amarelo-adrian: linear-gradient(90deg, rgba(36,29,0,1) 1%, rgba(138,147,14,1) 26%, rgba(159,163,11,1) 39%, rgba(198,199,14,1) 50%, rgba(197,191,17,1) 62%, rgba(224,209,21,1) 75%, rgba(246,214,16,1) 96%), rgb(36,29,0);
 }

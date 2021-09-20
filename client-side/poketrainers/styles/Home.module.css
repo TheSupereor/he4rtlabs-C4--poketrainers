@@ -1,7 +1,7 @@
 .ou{
   display: flex;
   font-size: 16px;
-  color: grey;
+  color: var(--cinza-escuro-darkTheme);
   font-weight: bold;
 }
 
@@ -19,6 +19,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  background: var(--gradiente-roxo-vermelho);
+
+  background-blend-mode: darken, normal;
+  transition: all 2s ease-in-out;
 }
 
 .topDetail{
@@ -40,18 +45,18 @@
   z-index: 1;
 }
 
-.login{
+.trainer{
   width: 55vw;
   margin: 0 auto;
+  padding: 30px 40px;
   border-radius: 30px;
-  box-shadow: inset 0px 0px 0px 8px #448EA8;
+  box-shadow: inset 0px 0px 0px 8px var(--trainer-color-1);
 }
 
-.login h2{
+.trainer h2{
   margin-top: 0px;
   font-size: 36px;
   font-weight: normal;
-  padding: 30px 40px;
 }
 
 .formLogin{
@@ -59,11 +64,12 @@
 }
 
 .inputText{
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   height: 55px;
   border-radius: 10px;
-  width: 100%;
-  border: 1px solid grey;
-  margin: 0 20px 0 40px;
+  border: 1px solid var(--cinza-escuro-darkTheme);
   padding: 0 20px;
 
   font-size: 28px;
@@ -73,12 +79,19 @@
   outline: none;
 }
 
+.formLogin .inputText{
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 0;
+  display: flex;
+}
+
 .buttonDefault{
   padding: 12px 40px;
   font-size: 28px;
   border-radius: 10px;
-  background-color: #29516E;
-  color: #F2F2F2;
+  background-color: var(--trainer-color-2);
+  color: var(--cinza-claro-whiteTheme);
   border: none;
 
   cursor: pointer;
@@ -86,21 +99,42 @@
 }
 
 .buttonDefault:hover{
-  background-color: #448EA8;
+  background-color: var(--trainer-color-1);
 }
 
-.formLogin .buttonDefault{
-  margin-right: 25px;
+.buttonDefaultSmall{
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: var(--trainer-color-2);
+  color: var(--cinza-claro-whiteTheme);
+  border: none;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.buttonDefaultSmall:hover{
+  background-color: var(--trainer-color-1);
+}
+
+.formLogin{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formLogin .inputText{
+  margin-top: 0;
 }
 
 .newTrainerButton{
-  margin: 0 40px 40px;
+  margin-top: 20px;
   padding: 12px 40px;
-  width: calc(100% - 65px);
+  width: 100%;
   font-size: 28px;
   border-radius: 10px;
-  background-color: #29516E;
-  color: #F2F2F2;
+  background-color: var(--trainer-color-2);
+  color: var(--cinza-claro-whiteTheme);
   border: none;
 
   cursor: pointer;
@@ -108,8 +142,36 @@
 }
 
 .newTrainerButton:hover{
-  background-color: #448EA8;
+  background-color: var(--trainer-color-1);
 }
+
+.trainer h2{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.inputLabel{
+  font-size: 36px;
+}
+
+.inputText[name = "idade"]{
+  width: 90px;
+  margin-left: 25px;
+}
+
+.inputSelect{
+  font-size: 24px;
+  margin-left: 20px;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.inputSelect:focus{
+  outline: none;
+}
+
+
+
 
 .main {
   padding: 5rem 0;
@@ -214,6 +276,29 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+/* Mudança de Background */
+
+.roxoVermelho{
+  background: var(--gradiente-roxo-vermelho);
+}
+
+.azulVerde{
+  background: var(--gradiente-azul-verde);
+}
+
+.adrian{
+  background: var(--gradiente-musgo-amarelo-adrian);
+}
+
+/* mostragem de pop ups */
+.AtivarDisplay{
+  display: flex;
+}
+
+.DesativarDisplay{
+  display: none;
 }
 
 @media (max-width: 600px) {
