@@ -53,6 +53,7 @@ app.put('trainers/:id', async (req, res) => {
 })
 
 //---------------- pokemon ----------------
+//adicionar pokemon
 app.post('/pokemons', async (req, res) => {
     try {
         const { name, image_url, attribute } = req.body;
@@ -60,17 +61,20 @@ app.post('/pokemons', async (req, res) => {
         const newPokemon = await pool.query(
             "INSERT INTO pokemons (name, image_url, attribute) VALUES ($1, $2, $3) RETURNING *", [name, image_url, attribute]
         )
+        //receber como resposta em json
+        res.json(newPokemon.rows[0]);
     } catch (err) {
         console.log(err.message)
     }
 });
 
 //pegar todos os pokemons de um user
-app.get('/pokemons/:trainerid', async (req, res) => {
+app.get('/pokemons/trainer/:trainerid', async (req, res) => {
     try {
         const { trainerid } = req.params;
         const pokemonsTrainer = await pool.query(
-            "SELECT * FROM pokemons, trainers, trainer_pokemons WHERE trainers.trainer_id = $1 AND pokemons.pokemon_id = trainer_pokemons.pokemon_id AND trainers.trainer_id = trainer_pokemons.trainer_id", [trainerid]
+            //"SELECT * FROM pokemons, trainers, trainer_pokemons WHERE trainers.trainer_id = $1 AND pokemons.pokemon_id = trainer_pokemons.pokemon_id AND trainers.trainer_id = trainer_pokemons.trainer_id", [trainerid]
+            "SELECT * FROM pokemons"
         );
         res.json(pokemonsTrainer.rows)
     } catch (err) {

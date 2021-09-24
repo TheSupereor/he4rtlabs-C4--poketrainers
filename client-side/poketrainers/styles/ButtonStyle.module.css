@@ -36,7 +36,13 @@
     transition: 0.4s;
 }
 
-.modalHeader h3{
+.modalHeader h2{
+    margin: 0;
+    position: relative;
+    top: -5px;
+}
+
+.modalHeader p{
     margin: 0;
 }
 
@@ -46,9 +52,8 @@
     text-align: center;
     padding: 20px;
     border-radius: 20px;
-    width: 500px;
 
-    right: calc(-50% + 250px);
+    right: calc(-50% + 300px);
 
     transition: all 0.45s ease-in-out;
 }

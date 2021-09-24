@@ -12,11 +12,9 @@ export default function Home() {
   const [actTheme, setActTheme] = useState('')
 
   //função que vai receber a resposta do ChangeBG
-  const handleCallback = (childData) => {
-    setActTheme(childData)
-    console.log(childData)
-
-
+  const handleCallback = (ChosenTheme) => {
+    setActTheme(ChosenTheme)
+    console.log(ChosenTheme)
   }
 
   const submitNewTrainer = async e => {

@@ -29,12 +29,11 @@ const ChangeBG = (props) => {
           onClick={() => setShow(false)}
           >
           <div 
-            //queria conseguir fazer um efeito da caixa surgindo, mas não consigo por enquanto
-            className={`${theme.modalContent} ${styles.defaultBg} ${show == true ? theme.active : theme.inactive}`}
+            className={`${theme.modalContent} ${trainerPage.ModalPopUp} ${show == true ? theme.active : theme.inactive}`}
             onClick={e => e.stopPropagation()}
             >
             <div className={theme.modalHeader}>
-              <h3>Escolha o tema de background!</h3>
+              <h2>Escolha o tema de background!</h2>
             </div>
 
             <form onSubmit={(e) => {returnValue(e)}}>

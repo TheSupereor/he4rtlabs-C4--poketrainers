@@ -17,13 +17,19 @@
 .trainer { 
     grid-area: trainer; 
     width: 20vw;
-    height: 80vh;
+    height: 85vh;
     border-radius: 30px;
 
     background: white;
     box-shadow: 0 0 0 6px #171717, inset 0px 0px 0px 8px var(--trainer-color-1);
 
     padding: 30px;
+}
+
+.actTrainerButtons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -20px;
 }
 
 .actTrainerButtons button{
@@ -33,7 +39,6 @@
     font-size: 20px;
     font-weight: 600;
     font-family: 'Roboto Condensed', sans-serif;
-    margin: -20px 20px 0;
 }
 
 .trainerDataImage{
@@ -59,6 +64,7 @@
 .regionAge{
     display: flex;
     padding: 0 30px 0 0px;
+    justify-content: space-around;
 }
 
 .data p{
@@ -74,6 +80,11 @@
 .data h4{
     margin-bottom: 10px;
     text-align: left;
+}
+
+.data .bio{
+    font-size: 10px;
+    color: #3D3E3D;
 }
 
 /* Pokemons */
@@ -114,10 +125,11 @@
 
     background: none;
     border: none;
-    gap: 5px;
+    gap: 0px;
 
     font-size: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 .actPokemonListIcon{
@@ -126,6 +138,7 @@
 
 .pokemonList{
     overflow-y: scroll;
+    height: 85%;
 }
 
 .pokemonList .actPokemonListIcon{
@@ -217,6 +230,7 @@
 
 .itemList{
     overflow-y: scroll;
+    height: 80%;
 }
 
 .itemList .actItemListIcon{
@@ -242,4 +256,36 @@
 
 .actItemListIcon .itemTypes p{
     font-size: 12px;
+}
+
+/* Auxiliares */
+
+.ModalPopUp{
+    border-radius: 30px;
+
+    background: white;
+    box-shadow: 0 0 0 6px #171717, inset 0px 0px 0px 8px var(--trainer-color-1);
+
+    padding: 30px;
+    width: max-content;
+    left: 27%;
+
+    top: 10% !important; 
+}
+
+.ModalPopUp .topDetailContainer{
+    position: relative;
+    top: -40px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .data .bio{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .data .bio{
+        font-size: 16px;
+    }
 }

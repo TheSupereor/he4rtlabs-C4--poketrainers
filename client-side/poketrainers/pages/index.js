@@ -1,22 +1,38 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import styles from '../styles/Home.module.css'
+import { useState, useEffect } from 'react';
+import styles from '../styles/Home.module.css';
+import router, { useRouter } from 'next/router';
 
 export default function Home() {
   
   const [trainer, setTrainer] = useState("");
 
-  const loginTrainer = async e => {
-    e.preventDefalt();
+  const loginTrainer = async (e) => {
+    e.preventDefault();
 
     try {
       const response = await fetch(`http://localhost:5000/trainers/${trainer}`);
       console.log(response);
+
+      //enviando o usuário para a página correta
+      if(response.ok == true){
+        router.push({
+          pathname: '/trainerPage',
+          query: {name: trainer}
+        });
+      }else{
+        alert(`Algo deu errado, tente novamente! Erro:${response.status}`)
+      };
+
     } catch (err) {
       console.log(err.message)
     }
+  }
+
+  const teste = (e, value) => {
+    e.preventDefault();
+    console.log(value);
+    setTrainer(value);
   }
 
   return (
@@ -26,8 +42,13 @@ export default function Home() {
         <div className={styles.trainer}>
           <h2>Bem-vindo, treinador(a)! Quais pokemons iremos capturar hoje?</h2>
 
-          <form className={styles.formLogin} >
-            <input required onChange={e => setTrainer(e.target.value)} className={styles.inputText}/>
+          <form className={styles.formLogin} onSubmit={e => loginTrainer(e)}>
+            <input 
+              required 
+              name="trainer"
+              className={styles.inputText}
+              onChange={e => {setTrainer(e.target.value)}}
+              />
             <button className={styles.buttonDefault}>Entrar</button>
           </form>
 
