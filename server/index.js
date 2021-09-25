@@ -1,6 +1,6 @@
 var express = require('express');
-var cors = require('cors');
 var app = express();
+var cors = require('cors');
 const pool = require('./db')
 
 app.use(cors());
@@ -56,10 +56,25 @@ app.put('trainers/:id', async (req, res) => {
 //adicionar pokemon
 app.post('/pokemons', async (req, res) => {
     try {
-        const { name, image_url, attribute } = req.body;
+        const { pokemonSearchName, pokemonSprite, nomesTipos } = req.body;
 
         const newPokemon = await pool.query(
-            "INSERT INTO pokemons (name, image_url, attribute) VALUES ($1, $2, $3) RETURNING *", [name, image_url, attribute]
+            "INSERT INTO pokemons (name, image_url, attribute) VALUES ($1, $2, $3) RETURNING *", [ pokemonSearchName, pokemonSprite, nomesTipos ]
+        )
+        //receber como resposta em json
+        res.json(newPokemon.rows[0]);
+    } catch (err) {
+        console.log(err.message)
+    }
+});
+
+//criar ligação entre pokemon e treinador
+app.post('/pokemons/trainer', async (req, res) => {
+    try {
+        const { pokemonSearchName, pokemonSprite, nomesTipos } = req.body;
+
+        const newPokemon = await pool.query(
+            "INSERT INTO pokemons (name, image_url, attribute) VALUES ($1, $2, $3) RETURNING *", [ pokemonSearchName, pokemonSprite, nomesTipos ]
         )
         //receber como resposta em json
         res.json(newPokemon.rows[0]);
@@ -73,9 +88,9 @@ app.get('/pokemons/trainer/:trainerid', async (req, res) => {
     try {
         const { trainerid } = req.params;
         const pokemonsTrainer = await pool.query(
-            //"SELECT * FROM pokemons, trainers, trainer_pokemons WHERE trainers.trainer_id = $1 AND pokemons.pokemon_id = trainer_pokemons.pokemon_id AND trainers.trainer_id = trainer_pokemons.trainer_id", [trainerid]
-            "SELECT * FROM pokemons"
-        );
+            //"SELECT name, image_url, attribute FROM pokemons, trainers, trainer_pokemons WHERE trainers.trainer_id = $1 AND pokemons.pokemon_id = trainer_pokemons.pokemon_id AND trainers.trainer_id = trainer_pokemons.trainer_id", [trainerid]
+            "SELECT * FROM trainer_pokemons"
+        )
         res.json(pokemonsTrainer.rows)
     } catch (err) {
         console.log(err.message)
@@ -102,6 +117,18 @@ app.delete('/pokemons/:pokeid', async (req, res) => {
         const { pokeid } = req.params;
         const deletePokemon = await pool.query(
             "DELETE FROM pokemons WHERE pokemon_id = $1", [ pokeid ]
+        );
+        res.json("Pokemon enviado com sucesso!")
+    } catch (err) {
+        console.log(err.message)
+    }
+})
+
+// ----------------- limpar banco todos os pokemons -----------------
+app.delete('/pokemons/clean', async (req, res) => {
+    try {
+        const deletePokemon = await pool.query(
+            "DELETE FROM pokemons"
         );
         res.json("Pokemon enviado com sucesso!")
     } catch (err) {

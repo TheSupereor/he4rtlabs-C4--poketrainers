@@ -17,10 +17,10 @@ export default function Pokemons(props) {
             try {
                 const response = await fetch(`http://localhost:5000/pokemons/trainer/${id}`);
                 const jsonPokemonsData = await response.json();
-                console.log(response);
+                //console.log(response);
     
                 setPokemons(jsonPokemonsData);
-                console.log(pokemons);
+                console.log(jsonPokemonsData);
             } catch (err) {
                 console.log(err.message)
             }
