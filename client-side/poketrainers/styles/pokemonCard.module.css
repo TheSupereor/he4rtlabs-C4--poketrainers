@@ -1,0 +1,30 @@
+.actPokemonListIcon{
+    background: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    height: fit-content;
+}
+
+.pokemonImage{
+    margin-bottom: -20px;
+}
+
+.actPokemonListIcon p{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 2px 0;
+    text-transform: capitalize;
+}
+
+.actPokemonListIcon .pokemonTypes{
+    background: #b4b4b4;
+    border-radius: 30px;
+    width: fit-content;
+
+    padding: 2px 10px;
+    margin: 4px auto;
+}
+
+.actPokemonListIcon .pokemonTypes p{
+    font-size: 12px;
+}

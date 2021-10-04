@@ -4,11 +4,11 @@ import theme from '../../styles/ButtonStyle.module.css';
 import trainerPage from '../../styles/trainerPage.module.css';
 import { useState, useEffect } from 'react';
 
-const AddPokemon = () => {
+const AddPokemon = ( props ) => {
     //controlar o aparecimento da modal
     const [show, setShow] = useState(false);
 
-        // ----------------------------------- Procura por input e click -------------------
+    // ----------------------------------- Procura por input e click -------------------
 
     //procurar por um pokemon em específico
     const [pokemonSearchName, setPokemonSearchName] = useState("");
@@ -75,17 +75,31 @@ const AddPokemon = () => {
     const AddPokemonToTrainer = async (e) => {
       e.preventDefault();
       setShow(false);
-      const nomesTipos = actualPokemon.types[0].type.name;
+      const name = pokemonSearchName;
+      const image_url = pokemonSprite;
+      const attribute1 = actualPokemon.types[0].type.name;
+      let attribute2 = "a";
+      if (actualPokemon.types.length == 1) {
+        attribute2 = "a";
+      } else {
+        attribute2 = actualPokemon.types[1].type.name;
+      }
+
+      console.log(attribute2)
+
+      const trainer_id = props.dados.id;
 
       try {
-        const body = { pokemonSearchName, pokemonSprite, nomesTipos };
-        const response = await fetch("http://localhost:5000/pokemons", {
+        const body = { name, image_url, attribute1, attribute2 };
+
+        const response = await fetch(`http://localhost:5000/trainer/${trainer_id}/pokemon`, {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify(body)
 
         });
 
+        props.PokemonAdicionado();
         console.log(response)
       } catch (err) {
         console.log(err);

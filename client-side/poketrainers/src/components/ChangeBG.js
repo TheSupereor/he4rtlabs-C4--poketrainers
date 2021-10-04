@@ -1,4 +1,5 @@
 import styles from '../../styles/Home.module.css'
+import trainerPage from '../../styles/trainerPage.module.css';
 import theme from '../../styles/ButtonStyle.module.css'
 import { useState } from 'react'
 
@@ -8,7 +9,7 @@ const ChangeBG = (props) => {
 
     //verificando se a função está sendo passada corretamente
     //console.log(props.parentCallback)
-
+ 
     //enviar de volta para a página 
     const returnValue = (e) => {
       e.preventDefault();

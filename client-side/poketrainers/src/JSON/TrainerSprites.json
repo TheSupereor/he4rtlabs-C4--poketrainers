@@ -1,0 +1,154 @@
+[
+    {
+      "title": "Treinadora Às",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/0/08/Spr_B2W2_Ace_Trainer_F.png"
+    },
+    {
+      "title": "Treinador Às",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/3/3a/Spr_B2W2_Ace_Trainer_M.png"
+    },
+		{
+      "title": "Torcedoras",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/1/1d/Spr_B2W2_Backers_F.png"
+    },
+		{
+      "title": "Torcedores",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/c/c8/Spr_B2W2_Backers_M.png"
+    },
+    {
+      "title": "Mochileira",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/7/7c/Spr_B2W2_Backpacker_F.png"
+    },
+		{
+      "title": "Mochileiro",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Backpacker_M.png"
+    },
+    {
+      "title": "Padeira",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/2/26/Spr_B2W2_Baker.png"
+    },
+		{
+      "title": "Funcionária",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/0/09/Spr_B2W2_Clerk_F.png"
+    },
+    {
+      "title": "Funcionário",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/c/ca/Spr_B2W2_Clerk_M.png"
+    },
+		{
+      "title": "Ciclista (F)",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/9/95/Spr_B2W2_Cyclist_F.png"
+    },
+    {
+      "title": "Ciclista (M)",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/8/83/Spr_B2W2_Cynthia.png"
+    },
+		{
+      "title": "Dançarino",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/b/b1/Spr_B2W2_Dancer.png"
+    },
+    {
+      "title": "Pescador",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/c/c2/Spr_B2W2_Fisherman.png"
+    },
+		{
+      "title": "Guitarrista",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/7/74/Spr_B2W2_Guitarist.png"
+    },
+		{
+      "title": "Músico",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/d/da/Spr_B2W2_Musician.png"
+    },
+    {
+      "title": "Bobo",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/c/c4/Spr_B2W2_Harlequin.png"
+    },
+		{
+      "title": "Andarilho",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/8/84/Spr_B2W2_Hiker.png"
+    },
+		{
+      "title": "Senhora",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/e/e0/Spr_B2W2_Lady.png"
+    },
+    {
+      "title": "Empregada",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/e/ec/Spr_B2W2_Maid.png"
+    },
+    {
+      "title": "Enfermeira",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/5/54/Spr_B2W2_Nurse.png"
+    },
+		{
+      "title": "Auxiliar de Berçário",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/0/01/Spr_B2W2_Nursery_Aide.png"
+    },
+		{
+      "title": "Mulher com Guarda-chuva",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/f/fa/Spr_B2W2_Parasol_Lady.png"
+    },
+    {
+      "title": "Piloto",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/e/ed/Spr_B2W2_Pilot.png"
+    },
+		{
+      "title": "Criadora Pokemon",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/e/e9/Spr_B2W2_Pok%C3%A9mon_Breeder_F.png"
+    },
+		{
+      "title": "Criador Pokemon",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/8/8d/Spr_B2W2_Pok%C3%A9mon_Breeder_M.png"
+    },
+    {
+      "title": "Garoto Pré-escolar",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/7/72/Spr_B2W2_Preschooler_M.png"
+    },
+		{
+      "title": "Garota Pré-escolar",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/8/8b/Spr_B2W2_Preschooler_F.png"
+    },
+    {
+      "title": "Mulher Psíquica",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/7/7c/Spr_B2W2_Psychic_F.png"
+    },
+		{
+      "title": "Homem Psíquico",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/3/35/Spr_B2W2_Psychic_M.png"
+    },
+		{
+      "title": "Garota de Escola",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/9/9b/Spr_B2W2_School_Kid_F.png"
+    },
+    {
+      "title": "Garoto de Escola",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/5/5b/Spr_B2W2_School_Kid_M.png"
+    },
+    {
+      "title": "Cientista (F)",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Scientist_F.png"
+    },
+		{
+      "title": "Cientista (M)",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/f/fb/Spr_B2W2_Scientist_M.png"
+    },
+    {
+      "title": "Gêmeas",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/9/97/Spr_B2W2_Twins.png"
+    },
+		{
+      "title": "Veterana",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/8/88/Spr_B2W2_Veteran_F.png"
+    },
+		{
+      "title": "Veterano",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/4/4f/Spr_B2W2_Veteran_M.png"
+    },
+    {
+      "title": "Camareira",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Waiter.png"
+    },
+    {
+      "title": "Camareiro",
+      "sprite_url": "https://archives.bulbagarden.net/media/upload/0/00/Spr_B2W2_Waitress.png"
+    }
+]

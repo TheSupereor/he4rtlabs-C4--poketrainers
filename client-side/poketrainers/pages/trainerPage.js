@@ -3,8 +3,8 @@ import styles from '../styles/Home.module.css'
 import trainerPage from '../styles/trainerPage.module.css';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import Mochila from '../src/components/Mochila';
-import AddPokemon from '../src/components/AddPokemon';
+import Link from 'next/link'
+//import Mochila from '../src/components/Mochila';
 import Pokemons from '../src/components/Pokemons';
 
 export default function trainerPageIndex() {
@@ -18,7 +18,7 @@ export default function trainerPageIndex() {
     const getDados = async () => {
         if(name != undefined){
             try {
-                const response = await fetch(`http://localhost:5000/trainers/${name}`);
+                const response = await fetch(`http://localhost:5000/trainer/${name}`);
                 const jsonTrainerData = await response.json();
     
                 //colocando os dados na variável
@@ -26,7 +26,7 @@ export default function trainerPageIndex() {
                 console.log(jsonTrainerData);
             } catch (err) {
                 console.log(err.message)
-            }
+            } 
         }
     }
 
@@ -44,17 +44,21 @@ export default function trainerPageIndex() {
             </div>
 
             <div className={trainerPage.actTrainerButtons}>
-                <button>Customizar</button>
-                <button>Deslogar</button>
+                <button >Customizar</button>
+                <button >
+                  <Link href="/createTrainer">
+                    <a>Deslogar</a>
+                  </Link>
+                </button>
             </div>
 
             <div className={trainerPage.trainerData}>
                 <h3>{dados.name || "..."}</h3>
-                <p>Mochileiro</p>
+                <p>{dados.title || "..."}</p>
 
                 <div className={trainerPage.trainerDataImage}>
                     <Image 
-                      src="https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Backpacker_M.png"
+                      src={dados.trainer_sprite || "https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Backpacker_M.png"}
                       width={200}
                       height={200}
                     />
@@ -75,7 +79,7 @@ export default function trainerPageIndex() {
                 <div className={trainerPage.data}>
                     <h4>Biografia:</h4>
                     <p className={trainerPage.bio}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        {dados.trainer_bio || "..."}
                     </p>
                 </div>
 
@@ -85,7 +89,7 @@ export default function trainerPageIndex() {
 
         <Pokemons dados={dados}/>
 
-        <Mochila />
+        {/* <Mochila /> */}
 
       </div>
     </div>

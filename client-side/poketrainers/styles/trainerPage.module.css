@@ -3,6 +3,7 @@
     max-height: 90%;
     margin: 5% 5%;
 
+    /* Código para uma versão com mochila e coleta de pokemons
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1.2fr 0.8fr;
@@ -11,12 +12,20 @@
     grid-auto-flow: row;
     grid-template-areas:
       "trainer pokemons pokemons"
-      "trainer mochila mochila";
+      "trainer mochila mochila"; */
+
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.6fr 1.4fr; 
+    grid-template-rows: 2.2fr; 
+    gap: 0px 40px; 
+    grid-template-areas: 
+        "trainer pokemons";
 }
   
 .trainer { 
     grid-area: trainer; 
-    width: 20vw;
+    /* width: 24vw; */
     height: 85vh;
     border-radius: 30px;
 
@@ -43,6 +52,7 @@
 
 .trainerDataImage{
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
 .trainerData{
@@ -54,11 +64,13 @@
     margin: 0;
     color: #060904;
     font-size: 20px;
+    text-transform: capitalize;
 }
 
 .trainerData p{
     margin-top: 0;
     color: #3D3E3D;
+    text-transform: capitalize;
 }
 
 .regionAge{
@@ -83,15 +95,16 @@
 }
 
 .data .bio{
-    font-size: 10px;
+    font-size: 14px;
     color: #3D3E3D;
+    width: 20vw;
+    overflow-wrap: break-word;
 }
 
 /* Pokemons */
   
 .pokemons { 
     grid-area: pokemons; 
-    width: 100%;
     height: 100%;
     border-radius: 30px;
 
@@ -112,6 +125,8 @@
     background: none;
     border: none;
     width: fit-content;
+
+    cursor: pointer;
 }
 
 .actPokemonButtons .actPokemonCategoryIcon:focus{
@@ -137,33 +152,45 @@
 }
 
 .pokemonList{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 625px; */
+    max-height: 100%;
+
+    justify-content: left;
+
+    margin-top: -10px;
+
     overflow-y: scroll;
-    height: 85%;
 }
 
-.pokemonList .actPokemonListIcon{
+.pokemonList::-webkit-scrollbar{
+    width: 10px;
+    background: none;
+}
+
+.pokemonList::-webkit-scrollbar-thumb{
+    background: var(--pokemon-color-2);
+    border-radius: 10px;
+}
+
+.pokemonListCleanFilter{
+    position: fixed;
+    top: 86%;
+    left: 37%;
+
     background: none;
     border: none;
-    font-family: 'Lato', sans-serif;
-}
-
-.actPokemonListIcon p{
+    color: #29516E;
     font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.pokemonListCleanFilter:hover{
     font-weight: 700;
-    margin: 2px 0;
-}
-
-.actPokemonListIcon .pokemonTypes{
-    background: #b4b4b4;
-    border-radius: 30px;
-    width: fit-content;
-
-    padding: 2px 10px;
-    margin: 4px auto;
-}
-
-.actPokemonListIcon .pokemonTypes p{
-    font-size: 12px;
 }
 
 /* Mochila */
@@ -280,12 +307,12 @@
 
 @media only screen and (min-width: 1400px) {
     .data .bio{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 1600px) {
     .data .bio{
-        font-size: 16px;
+        font-size: 18px;
     }
 }

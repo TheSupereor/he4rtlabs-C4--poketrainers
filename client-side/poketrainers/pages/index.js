@@ -10,15 +10,17 @@ export default function Home() {
   const loginTrainer = async (e) => {
     e.preventDefault();
 
+    const name = trainer;
+
     try {
-      const response = await fetch(`http://localhost:5000/trainers/${trainer}`);
+      const response = await fetch(`http://localhost:5000/trainer/${name}`);
       console.log(response);
 
       //enviando o usuário para a página correta
       if(response.ok == true){
         router.push({
           pathname: '/trainerPage',
-          query: {name: trainer}
+          query: {name: name}
         });
       }else{
         alert(`Algo deu errado, tente novamente! Erro:${response.status}`)

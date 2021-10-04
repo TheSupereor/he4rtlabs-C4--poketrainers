@@ -64,7 +64,6 @@
 }
 
 .inputText{
-  margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
   height: 35px;
@@ -72,7 +71,7 @@
   border: 1px solid var(--cinza-escuro-darkTheme);
   padding: 0 20px;
 
-  font-size: 28px;
+  font-size: 16px;
 }
 
 .inputText:focus{
@@ -150,6 +149,28 @@
   margin-bottom: 0;
 }
 
+.CreateTrainerForm{
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.CreateTrainerForm label{
+  margin-top: 20px;
+  display:inline-block;
+}
+
+.CreateTrainerForm input[name='name']{
+  max-width: 200px;
+}
+
+.CreateTrainerForm textarea{
+  width: 90%;
+  height: 100px;
+  resize: horizontal;
+  padding: 10px;
+}
+
 .inputLabel{
   font-size: 24px;
 }
@@ -160,14 +181,24 @@
 }
 
 .inputSelect{
-  font-size: 24px;
+  font-size: 16px;
   margin-left: 20px;
-  padding: 10px 5px;
+  padding: 7px 10px;
   border-radius: 10px;
 }
 
 .inputSelect:focus{
   outline: none;
+}
+
+.CreateTrainerForm hr{
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+.CreateTrainerForm label[name="bio"]{
+  margin-bottom: 10px;
 }
 
 /* Pokemon Add */
