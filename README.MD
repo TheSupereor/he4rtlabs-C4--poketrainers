@@ -1,3 +1,96 @@
+![image](https://user-images.githubusercontent.com/55772578/135903253-8d56d701-dc4b-4e18-9318-383aa0a14b72.png)
+
+# PokeTrainers
+
+## Descrição do Projeto
+<p align="center">Mantenha sua jornada pokemon na palma da sua mão com o PokeTrainers! Uma pokedex customizada para que tenha seus pokemons e sua história na palma da sua mão.</p>
+
+<div display="inline-block" align="center">
+    <img src="https://img.shields.io/static/v1?label=React&message=17.0.2&color=61DAFB&style=for-the-badge&logo=React"/>
+    <img src="https://img.shields.io/static/v1?label=Next.js&message=11.1.2&color=000000&style=for-the-badge&logo=Next.js"/>
+    <img src="https://img.shields.io/static/v1?label=Express&message=^4.17.1&color=000000&style=for-the-badge&logo=Express"/>
+    <img src="https://img.shields.io/static/v1?label=PostgreSQL&message=^8.7.1&color=4169E1&style=for-the-badge&logo=PostgreSQL"/>
+    <img src="https://img.shields.io/static/v1?label=Sequelize&message=^6.6.5&color=52B0E7&style=for-the-badge&logo=Sequelize"/>
+</div>
+
+<p id="objetivo" align="center">
+    O objetivo de fazer o desafio é também o motivo pelo qual o desafio foi lançado, aprender e entender mais sobre banco de dados relacional, bem como, pra mim, treinar conceitos do front end e uma coisa meio diferente do meu comum. 
+</p>
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Express](http://expressjs.com/)
+- [Cors](http://expressjs.com/en/resources/middleware/cors.html)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Sequelize](https://sequelize.org/)
+
+### Features
+
+- [x] Cadastro de treinador
+- [x] Cadastro de pokemon
+- [x] Relação entre treinador e pokemon
+
+![image](https://user-images.githubusercontent.com/55772578/135930082-c9116ab2-4dd8-4948-aceb-080d346371b2.png)
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando o Back End (Servidor)
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/TheSupereor/he4rtlabs-C4--poketrainers>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd he4rtlabs-C4--poketrainers
+
+# Vá para a pasta server
+$ cd server
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# O servidor iniciará na porta:5000 - acesse <http://localhost:5000>
+```
+
+### 🎲 Rodando o Front End (Client-side)
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/TheSupereor/he4rtlabs-C4--poketrainers>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd he4rtlabs-C4--poketrainers
+
+# Vá para a pasta server
+$ cd client-side/poketrainers
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# O cliente iniciará na porta:3000 - acesse <http://localhost:3000>
+```
+
+É isso, obrigado!
+
+---
+
+#Proposta do desafio:
+    
 # Projeto 004 - Try Catch 'Em all 
 
 Pokedéx boladona pra você pegar todos os pokemões do planeta (que você cadastrar)
