@@ -44,7 +44,10 @@ export default function trainerPageIndex() {
             </div>
 
             <div className={trainerPage.actTrainerButtons}>
+                {/* -- ia fazer um botão pra mudar os dados do treinador, mas acabei deixando pra lá, quero seguir para outro projeto,
+                       precisaria só fazer uma rota e um método pra isso, um outro pop up e uma função update.
                 <button >Customizar</button>
+                */}
                 <button >
                   <Link href="/createTrainer">
                     <a>Deslogar</a>

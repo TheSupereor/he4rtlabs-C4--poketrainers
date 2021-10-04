@@ -3,6 +3,13 @@
     border: none;
     font-family: 'Lato', sans-serif;
     height: fit-content;
+
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.actPokemonListIcon:hover{
+    background: rgba(0,0,0,0.1)
 }
 
 .pokemonImage{
@@ -27,4 +34,25 @@
 
 .actPokemonListIcon .pokemonTypes p{
     font-size: 12px;
+}
+
+.popUp{
+    width: 300px;
+    left: 35%;
+    transition: .2s;
+}
+
+.header h2{
+    text-transform: capitalize;
+}
+
+.attributeTable table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.attributeTable table td{
+    border: 1px solid #dddddd;
+    padding: 8px;
 }

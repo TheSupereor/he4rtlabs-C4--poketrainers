@@ -28,7 +28,6 @@ const AddPokemon = ( props ) => {
       })
 
       .catch(err => console.log(err.message));
-      //console.log(actualPokemon) 
     }
 
     useEffect(() => {

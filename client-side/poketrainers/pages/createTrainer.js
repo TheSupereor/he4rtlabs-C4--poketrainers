@@ -54,6 +54,8 @@ export default function Home() {
     }
   }
 
+  //não consegui fazer com que ambos os valores sejam enviados pelo value do elemento,
+  //então decidi fazer uma função pra filtrar e achar o elemento correto
   const settingComplexData = (titulo) => {  
     setTitle(titulo);
 
