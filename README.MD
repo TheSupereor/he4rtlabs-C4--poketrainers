@@ -13,18 +13,21 @@
     <img src="https://img.shields.io/static/v1?label=Sequelize&message=^6.6.5&color=52B0E7&style=for-the-badge&logo=Sequelize"/>
 </div>
 
-<p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
-
 <p id="objetivo" align="center">
     O objetivo de fazer o desafio é também o motivo pelo qual o desafio foi lançado, aprender e entender mais sobre banco de dados relacional, bem como, pra mim, treinar conceitos do front end e uma coisa meio diferente do meu comum. 
 </p>
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Express](http://expressjs.com/)
+- [Cors](http://expressjs.com/en/resources/middleware/cors.html)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Sequelize](https://sequelize.org/)
 
 ### Features
 
@@ -34,7 +37,55 @@
 
 ![image](https://user-images.githubusercontent.com/55772578/135930082-c9116ab2-4dd8-4948-aceb-080d346371b2.png)
 
+### Pré-requisitos
 
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando o Back End (Servidor)
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/TheSupereor/he4rtlabs-C4--poketrainers>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd he4rtlabs-C4--poketrainers
+
+# Vá para a pasta server
+$ cd server
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# O servidor iniciará na porta:5000 - acesse <http://localhost:5000>
+```
+
+### 🎲 Rodando o Front End (Client-side)
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/TheSupereor/he4rtlabs-C4--poketrainers>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd he4rtlabs-C4--poketrainers
+
+# Vá para a pasta server
+$ cd client-side/poketrainers
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# O cliente iniciará na porta:3000 - acesse <http://localhost:3000>
+```
+
+É isso, obrigado!
 
 ---
 
