@@ -4,6 +4,7 @@
 
 ## Descrição do Projeto
 <p align="center">Mantenha sua jornada pokemon na palma da sua mão com o PokeTrainers! Uma pokedex customizada para que tenha seus pokemons e sua história na palma da sua mão.</p>
+
 <div display="inline-block" align="center">
     <img src="https://img.shields.io/static/v1?label=React&message=17.0.2&color=61DAFB&style=for-the-badge&logo=React"/>
     <img src="https://img.shields.io/static/v1?label=Next.js&message=11.1.2&color=000000&style=for-the-badge&logo=Next.js"/>
@@ -12,7 +13,32 @@
     <img src="https://img.shields.io/static/v1?label=Sequelize&message=^6.6.5&color=52B0E7&style=for-the-badge&logo=Sequelize"/>
 </div>
 
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#roadmap">Roadmap</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#contribuicao">Contribuição</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
 
+<p id="objetivo" align="center">
+    O objetivo de fazer o desafio é também o motivo pelo qual o desafio foi lançado, aprender e entender mais sobre banco de dados relacional, bem como, pra mim, treinar conceitos do front end e uma coisa meio diferente do meu comum. 
+</p>
+
+### Features
+
+- [x] Cadastro de treinador
+- [x] Cadastro de pokemon
+- [x] Relação entre treinador e pokemon
+
+![image](https://user-images.githubusercontent.com/55772578/135930082-c9116ab2-4dd8-4948-aceb-080d346371b2.png)
+
+
+
+---
+
+#Proposta do desafio:
     
 # Projeto 004 - Try Catch 'Em all 
 
