@@ -87,7 +87,7 @@ $ npm run dev
 
 ## Pensamentos iniciais
 
-Inicialmente pensei em fazer algo mais diferente, algo como "crie sua própria história pokemon", onde você poderia adicionar pokemons, itens e uma história própria para si. Todavia vi, com o tempo, que isso ia divergir demais do desafio inicial estabelecido, por isso há uma secção "Mochila.js" e css's relacionados, mas que ficaram de fora. Fazer dessa forma iria mudar um tanto a forma que o banco de dados iria funcionar, mas seria simples de implementar também. Talvez ainda faça algum dia, em uma versão melhor ainda, podendo coletar insígnias e coisas assim, mas por enquanto deixarei essa belezinha assim.
+Inicialmente pensei em fazer algo mais diferente, algo como "crie sua própria história pokemon", onde você poderia adicionar pokemons, itens e uma história própria para si. Todavia vi, com o tempo, que isso ia divergir demais do desafio inicial estabelecido, que era uma pokedex mais simples, por isso há uma secção "Mochila.js" e css's relacionados, mas que ficaram de fora. Fazer dessa forma iria mudar um tanto a forma que o banco de dados iria funcionar, mas seria simples de implementar também. Talvez ainda faça algum dia, em uma versão melhor ainda, podendo coletar insígnias e coisas assim, mas por enquanto deixarei essa belezinha assim.
 
 É isso, obrigado!
 
